@@ -1,0 +1,22 @@
+{
+  "name": "Study/Work Mode",
+  "description": "Extension, what blocks most common social media websites. ",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts" : [{
+        "matches" : [ "http://*/*","https://*/*"],
+        "js" : ["extension.js"]
+        
+  }],
+  "browser_action": {
+    "default_title": "Study/Work Mode",
+    "default_icon": "warning.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
